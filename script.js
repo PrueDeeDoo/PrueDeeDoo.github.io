@@ -49,7 +49,7 @@ makeListButton.addEventListener("click", function() {
   }
 
   result.innerHTML = displayText;
-  sharedIDDisplay.innerHTML = "Below is your shared ID:";
+  sharedIDDisplay.innerHTML = "Below is your shareable ID:";
   outputID.innerHTML = sharedID.join("");
   copySharedIDButton.style.display = "block";
 });
