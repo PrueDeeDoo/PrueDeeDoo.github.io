@@ -5,22 +5,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Select</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <input type="checkbox" id="c1">&nbsp;Object Name1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SKU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link
+  <p style="font-size: 20px;" class="centered-text">Select boxes to create your list and shareable ID or enter a shareable ID in the designated box below to view a list shared with you.</p>
+  <input type="checkbox" id="c1">
+  <span>&nbsp;Object Name1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SKU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link </span>
   <br>
 
-  <input type="checkbox" id="c2">&nbsp;Object Name2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SKU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link
+  <input type="checkbox" id="c2">
+  <span>&nbsp;Object Name2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SKU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link </span>
   <br>
 
-  <input type="checkbox" id="c3">&nbsp;Object Name3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SKU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link
+  <input type="checkbox" id="c3">
+  <span>&nbsp;Object Name3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SKU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link </span>
   <br>
 
-  <button id="makeList">Make List</button>
+  <button id="makeList">Make List From Selection</button>
 
+
+  <br><br><br>
+  
   <p id="resultDisplay"></p>
+  <br><br><br>
+  <p id=sharedIDText></p>
+  <div id="outputSharedID"></div>
+  <button id="copySharedID" style="display: none;">Copy</button>
 
+
+  <br><br><br><br><br>
+  <input type="text" id="sharedIDInput" placeholder="Enter a shared number ID">
+  <button id="makeSharedList">Make List From Shared ID</button>
+
+
+  
   <script src="script.js"></script>
 </body>
 
